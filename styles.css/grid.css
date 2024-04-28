@@ -1,0 +1,29 @@
+.Container{
+    display: grid;
+    /* grid-template-columns: 200px 200px 500px 100px; */
+    grid-template-columns: 200px 200px 300px 400px;
+    justify-content: center;
+}
+
+.item{
+    border: 2px solid red;
+}
+
+.calender{
+    column-gap: 30px;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.date, .day{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 2em;
+}
+.day{
+    background-color: lightgray;
+}
